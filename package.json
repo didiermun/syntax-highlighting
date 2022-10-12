@@ -1,0 +1,17 @@
+{
+  "name": "highlightjs-flogram",
+  "version": "1.0.0",
+  "description": "highlightjs syntax for flogram",
+  "main": "src/flogram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flogram",
+    "highlightjs",
+    "highlight.js",
+    "syntax"
+  ],
+  "author": "Didier MUNEZERO <didiermunezer38@gmail.com>",
+  "license": "MIT"
+}
