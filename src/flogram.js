@@ -1,12 +1,12 @@
 /**
- * Language: Cypher
+ * Language: Flogram
  * Contributors:
- *   Johannes Wienke <languitar@semipol.de>
- *   Gustavo Reis <gusbemacbe@gmail.com>
+ *   Didier Munezero <didiermunezer38@gmail.com>
+ *   Matthew Czarnek matt<@gmail.com>
  */
  const FLOGRAM_IDENT_RE = '[\u00C0-\u02B8a-zA-Z_$][\u00C0-\u02B8a-zA-Z_$0-9]*';
- const GENERIC_IDENT_RE = JAVA_IDENT_RE
-    + recurRegex('(?:<' + JAVA_IDENT_RE + '~~~(?:\\s*,\\s*' + JAVA_IDENT_RE + '~~~)*>)?', /~~~/g, 2);
+ const GENERIC_IDENT_RE = FLOGRAM_IDENT_RE
+    + recurRegex('(?:<' + FLOGRAM_IDENT_RE + '~~~(?:\\s*,\\s*' + FLOGRAM_IDENT_RE + '~~~)*>)?', /~~~/g, 2);
  module.exports = function (hljs)
  {
    return {
@@ -16,7 +16,7 @@
          keyword: 'addr_of any as bind bits bool break constant contract else enum equals export fn get if iface is import interface length list loop member mut native object set types release return value_at',
          literal: 'true false null zero',
          buit_in: 'self this'
-         type: 'i8 i16 i32 i64 u8 u16 u32 u64 f8 f16 f32 d64 bool'
+         type: 'i8 i16 i32 i64 u8 u16 u32 u64 f8 f16 f32 f64 bool'
        },
      contains:
        [
